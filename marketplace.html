@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="marketplace.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="header">
+        <p id="websiteTitle">
+            <a href="homepage.html" style="font-weight: bold; text-decoration: none; color: black">CROP CONNECT 🌱</a>
+        </p>
+        <div class="headerLabels">
+            <nav>
+                <ul>
+                    <li><a href="#" style="margin-right: 70px;">About</a></li>
+                    <li><a href="#" style="margin-right: 70px;">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="subheader">
+        <nav>
+            <ul>
+                <li><a href="homepage.html" class="link" style="margin-right: 70px;">Home</a></li>
+                <li><a href="marketplace.html" style="font-weight: bold; margin-right: 70px;">Marketplace</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h2 style="font-size: 50px">Marketplace 🛒</h2>
+    <h2 style="font-size: 20px">Click on the images to message the seller! 🤳</h2>
+
+    <div class="listings"> <!-- wraps in one class so can be put side-by-side in css-->
+        <div id="productCard" class="productListing">
+            <style>
+                #productImage img {
+                    height: 200px;
+                    width: 350px;
+                    border-radius: 20px;
+                }
+            </style>
+
+            <a href="messaging.html" class="link">
+                <div id="productImage">
+                    <img src="images/carrots.jpeg" alt="ProductImage">
+                </div>
+                <p id="productName" class="productInfo">Carrots $3/lb</p>
+                <p id="sellerInfo" class="productInfo">Jane Doe | 10 km away</p>
+            </a>
+        </div>
+
+        <div id="productCard" class="productListing">
+            <a href="messaging.html" class="link"> <!-- links to another page -->
+                <div id="productImage">
+                    <img src="images/lettuce.webp" alt="ProductImage">
+                </div>
+                <p id="productName" class="productInfo">Lettuce $2/lb</p>
+                <p id="sellerInfo" class="productInfo">Jane Doe | 10 km away</p>
+            </a>
+        </div>
+
+        <div id="productCard" class="productListing">
+            <a href="messaging.html" class="link"> <!-- links to another page -->
+                <div id="productImage">
+                    <img src="images/strawberry.jpeg" alt="ProductImage">
+                </div>
+                <p id="productName" class="productInfo">Strawberries $5/lb</p>
+                <p id="sellerInfo" class="productInfo">John Smith | 15 km away </p>
+            </a>
+        </div>
+    </div>
+
+    <div class="listings1">
+        <div id="productCard" class="productListing">
+            <a href="messaging.html" class="link"> <!-- links to another page -->
+                <div id="productImage">
+                    <img src="images/eggs.webp" alt="ProductImage">
+                </div>
+                <p id="productName" class="productInfo">Eggs $5 per dozen</p>
+                <p id="sellerInfo" class="productInfo">John Smith | 15 km away </p>
+            </a>
+        </div>
+
+        <div id="productCard" class="productListing">
+            <a href="messaging.html" class="link"> <!-- links to another page -->
+                <div id="productImage">
+                    <img src="images/bread.webp" alt="ProductImage">
+                </div>
+                <p id="productName" class="productInfo">Bread $3 per loaf</p>
+                <p id="sellerInfo" class="productInfo">John Smith | 15 km away </p>
+            </a>
+        </div>
+
+        <div id="productCard" class="productListing">
+            <a href="messaging.html" class="link"> <!-- links to another page -->
+                <div id="productImage">
+                    <img src="images/spotato.jpeg" alt="ProductImage">
+                </div>
+                <p id="productName" class="productInfo">Potatoes $2/lb</p>
+                <p id="sellerInfo" class="productInfo">John Smith | 15 km away </p>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

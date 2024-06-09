@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+siteBody {
+  flex-direction: row;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  padding-left: 20px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+h1,
+h2 {
+  padding-left: 20px;
+}
+
+.subheader {
+  background-color: white;
+  padding-left: 20px;
+  border-bottom: 1px solid black;
+}
+
+#websiteTitle {
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.headerLabels {
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+nav {
+  position: sticky;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.containers {
+  display: flex;
+  flex-direction: row;
+  background-color: #D4E7C6;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 0;
+}
+
+.search-bar {
+  margin-right: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+#searchInput {
+  width: 200px;
+  padding-left: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  height: 50px;
+  width: 700px;
+  font-size: 20px;
+  border-color: black;
+  border-width: 2px;
+}
+
+.dropdown-content {
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.dropdown-content div {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+}
+
+.dropdown-content div:hover {
+  background-color: #f1f1f1;
+}
+
+.grocery-list {
+  width: 300px;
+}
+
+.grocery-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.grocery-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-btn,
+.remove-btn {
+  background: gold;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: gold;
+}
+
+span {
+  margin: 0 10px;
+}
+
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background: white;
+  color: black;
+  background-color: lightyellow;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  width: 500px;
+}
+
+#contactFarmerButton {
+  display: none;
+  background-color: lightyellow;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  width: 500px;
+  border-width: 2px;
+  border-color: black;
+}
+
+.farmer-name {
+  font-weight: "bold"
+}

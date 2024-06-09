@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: #D4E7C6;
+}
+
+nav {
+  position: sticky;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav ul,
+.link {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+}
+
+nav a,
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.subheader {
+  background-color: white;
+  padding-left: 20px;
+  border-bottom: 1px solid black;
+}
+
+#websiteTitle {
+  margin-right: auto;
+}
+
+.headerLabels {
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+.header {
+  border-width: 20;
+  width: 100%;
+  background-color: white;
+  padding-left: 20px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+h1,
+h2 {
+  padding-left: 20px;
+}
+
+#productCard {
+  border-radius: 20px;
+  margin-left: 20px;
+  background-color: white;
+  width: 350px;
+  height: 270px;
+  margin-bottom: 25px;
+}
+
+#productImage {
+  border-radius: 20px;
+  padding: 0px;
+  height: auto;
+  width: 100%;
+}
+
+.productListing {
+  border-radius: 20px;
+}
+
+.productInfo {
+  font-weight: bold;
+  margin: 0;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+#sellerInfo {
+  color: grey;
+}
+
+.listings {
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.listings1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10 px;
+}
+
+#startButton {
+  background: white;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  width: 300px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="homepage.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="header">
+        <p id="websiteTitle">
+            CROP CONNECT 🌱
+        </p>
+        <div class="headerLabels">
+            <nav>
+                <ul>
+                    <li><a style="margin-right: 70px;">About</a></li>
+                    <li><a href="#" style="margin-right: 70px;">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="subheader">
+        <nav>
+            <ul>
+                <li><a href="#" style="font-weight: bold; margin-right: 70px;">Home</a></li>
+                <li><a href="marketplace.html" style="margin-right: 70px;">Marketplace</a></li>
+                <li><a>Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="containers">
+        <div class="container1">
+            <h2 style="font-size: 50px">Hello, Jane 👋</h2>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="What are you looking for today?">
+                <div id="dropdown" class="dropdown-content">
+                    <!-- Search results will appear here -->
+                </div>
+            </div>
+            <p style="padding: 25px">Not sure what to buy? Visit the <a href="marketplace.html">Marketplace 🛒</a>
+                to
+                check out farmers' deals!</p>
+        </div>
+        <div class="container2">
+            <div class="groceryList">
+                <h2 style="margin-top: 60px">Grocery List 📝</h2>
+                <ul id="groceryItems">
+                    <!-- Grocery items will be added here -->
+                </ul>
+            </div>
+            <button id="nextPageButton" class="button" style="width: 40%; padding-left: 20px;">Search for Nearby Farmers 🔎</button>
+            <div id="distance"></div>
+            <div id="output"></div>
+            <a href="messaging.html" id="contactFarmerButton" class="button" style="text-decoration: none;">Contact
+                Farmer ⭐️🤳</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

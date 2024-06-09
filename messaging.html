@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging</title>
+    <link rel="stylesheet" href="messagingstyle.css">
+</head>
+
+<body>
+    <div class="header">
+        <p id="websiteTitle">
+            <a href="index.html" style="font-weight: bold; text-decoration: none;
+                  color: black;">CROP CONNECT 🌱</a>
+        </p>
+        <div class="headerLabels">
+            <nav>
+                <ul>
+                    <li><a href="welcome-page.html" style="margin-right: 70px;">About</a></li>
+                    <li><a href="#" style="margin-right: 70px;">FAQ</a></li>
+                    <li><a href="contact.html"">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="subheader">
+        <nav>
+            <ul>
+                <li><a href="index.html" style="margin-right: 70px">Home </a></li>
+                <li><a href="marketplace.html" style="margin-right: 70px">Marketplace</a></li>
+                <li><a href="#" style="margin-right: 70px">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>You are messaging Jane Doe</h1>
+    <div class="chat-container">
+        <div class="messages" id="messages"></div>
+        <form id="messageForm">
+            <input type="text" id="messageInput" placeholder="Type your message here..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById('messageForm');
+        const messageInput = document.getElementById('messageInput');
+        const messagesDiv = document.getElementById('messages');
+
+        let submissionCount = 0;
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const userMessage = messageInput.value;
+            displayMessage(userMessage, 'user-message');
+            messageInput.value = '';
+
+            submissionCount++;
+            setTimeout(() => {
+                const responseMessage = getAutomatedResponse(submissionCount);
+                displayMessage(responseMessage, 'response-message');
+            }, 1000);
+        });
+
+        function displayMessage(message, className) {
+            const messageElement = document.createElement('div');
+            messageElement.textContent = message;
+            messageElement.className = `message ${className}`;
+            messagesDiv.appendChild(messageElement);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        function getAutomatedResponse(count) {
+            const options = automatedResponses[count - 1];
+            const randomIndex = Math.floor(Math.random() * options.length);
+            return options[randomIndex];
+        }
+
+        const automatedResponses = [
+            [
+                "Howdy! What can I help you find today?",
+                "Welcome! How can we assist you today?",
+                "Hi there! Looking for something specific?"
+            ],
+            [
+                "Carrots are currently priced at $1.50 per pound, while spinach costs $2.00 per bunch.",
+                "For carrots, we have a special offer at $1.25 per pound, and spinach is available at $1.75 per bunch.",
+                "You'll find carrots priced at $1.75 per pound and spinach at $2.25 per bunch in our store."
+            ],
+            [
+                "Our store is open from 9 AM to 7 PM. You can pick up your food from our location at 123 Main Street.",
+                "You can find us open every day from 9 AM to 7 PM at 123 Main Street. Swing by and grab your fresh produce!",
+                "Visit us at 123 Main Street. Our store hours are 9 AM to 7 PM, every day of the week."
+            ],
+            [
+                "Thank you for your interest in our store! Feel free to reach out if you have any more questions.",
+                "We appreciate your visit! Let us know if there's anything else we can help you with.",
+                "Thanks for stopping by! Don't hesitate to ask if you need further assistance."
+            ]
+        ];
+    </script>
+</body>
+
+</html>
